@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .imgMainDiv {
+            display: flex;
+            justify-content: center;
+            margin: 3% 0%;
+        }
+
+        .imgDiv {
+            border: 2px dashed black;
+            width: 17%;
+            border-radius: 30px;
+            margin-right: 4%;
+        }
+
+        .imgDiv img {
+            width: 100%;
+            border-radius: 30px 30px 0px 0px;
+        }
+
+        .imgDiv h3 {
+            text-align: center;
+            color: red;
+        }
+
+        .imgDiv p {
+            padding: 0px 10px;
+            margin: 0px 10px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            /* height: 60px; */
+            background-color: pink;
+            align-items: center;
+            padding: 1%;
+        }
+
+        .headerDiv{
+            width: 37%;
+        }
+
+        .headerLink {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            margin-left: 6%;
+        }
+
+        .footer {
+            background-color: lightcoral;
+            /* height: 120px; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        input[type="submit"] {
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 5% 19%;
+            margin: 0% 5% 10% 21%;
+        }
+
+        .fiyatText {
+            color: red;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        /* .footerMenu {
+            margin-left: 300px;
+            margin-right: 300px;
+            margin-top: 5px;
+        } */
+
+        span {
+            font-style: italic;
+        }
+
+        .footerList {
+            list-style-type: none;
+            padding: 1%;
+        }
+
+        .footerList a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        .footerList li {
+           margin-top: 10px;
+        }
+
+        /* tablet */
+
+        @media only screen and (max-width: 900px) and (min-device-width:600px){
+            .imgMainDiv{
+                display:table-cell;
+                padding: 2%;
+            }
+
+            .imgDiv{
+                margin-bottom: 5%;
+                width: 100%;
+            }
+            
+            .headerDiv{
+                margin-right: 10%;
+            }
+
+
+            /* body{
+                display: flex;
+            } */
+        }
+
+
+        /* mobile */
+
+        @media only screen and (max-width: 600px) {
+            .imgMainDiv {
+                flex-direction: column;
+            }
+
+
+            .imgDiv {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            body{
+                display: block;
+            }
+
+            input[type="submit"]{
+                margin: 0% 5% 10% 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <img src="burgerlogo.png" alt="" height="80px" style="border-radius:5px">
+        </div>
+        <div class="headerDiv">
+            <a class="headerLink" href="">Anasayfa</a>
+            <a class="headerLink" href="">Hakkımızda</a>
+            <a class="headerLink" href="">İletişim</a>
+        </div>
+
+    </div>
+
+    <div style="background-image:url('banner.jpg');height: 400px;position: relative;">
+        <div style="position: absolute;
+        top: 12%;
+        text-align: center;
+        width: 100%;">
+            <h3>Efsane Banner</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum fuga minima enim iste ullam.
+                Illum
+                neque animi saepe quas modi tenetur commodi excepturi aut accusamus corporis. Magnam, at assumenda!
+            </p>
+        </div>
+    </div>
+    <div class="imgMainDiv">
+        <div class="imgDiv">
+            <img class="efso" src="burger.jpg" alt="">
+            <h3>Kasap Burger</h3>
+            <p>Bol Malzemeli Efsane Burger</p>
+            <h3 class="fiyatText">45.99 <span>TL</span></h3>
+            <input type="submit" name="satınAl" value="Satın Al">
+        </div>
+        <div class="imgDiv">
+            <img class="efso" src="burger.jpg" alt="">
+            <h3>Kasap Burger</h3>
+            <p>Bol Malzemeli Efsane Burger</p>
+            <h3 class="fiyatText">45.99 <span>TL</span></h3>
+            <input type="submit" name="satınAl" value="Satın Al">
+        </div>
+        <div class="imgDiv">
+            <img class="efso" src="burger.jpg" alt="">
+            <h3>Kasap Burger</h3>
+            <p>Bol Malzemeli Efsane Burger</p>
+            <h3 class="fiyatText">45.99 <span>TL</span></h3>
+            <input type="submit" name="satınAl" value="Satın Al">
+        </div>
+        <div class="imgDiv">
+            <img class="efso" src="burger.jpg" alt="">
+            <h3>Kasap Burger</h3>
+            <p>Bol Malzemeli Efsane Burger</p>
+            <h3 class="fiyatText">45.99 <span>TL</span></h3>
+            <input type="submit" name="satınAl" value="Satın Al">
+        </div>
+    </div>
+    <div class="imgMainDiv">
+        <div class="imgDiv">
+            <img class="efso" src="burger.jpg" alt="">
+            <h3>Kasap Burger</h3>
+            <p>Bol Malzemeli Efsane Burger</p>
+            <h3 class="fiyatText">45.99 <span>TL</span></h3>
+            <input type="submit" name="satınAl" value="Satın Al">
+        </div>
+        <div class="imgDiv">
+            <img class="efso" src="burger.jpg" alt="">
+            <h3>Kasap Burger</h3>
+            <p>Bol Malzemeli Efsane Burger</p>
+            <h3 class="fiyatText">45.99 <span>TL</span></h3>
+            <input type="submit" name="satınAl" value="Satın Al">
+        </div>
+        <div class="imgDiv">
+            <img class="efso" src="burger.jpg" alt="">
+            <h3>Kasap Burger</h3>
+            <p>Bol Malzemeli Efsane Burger</p>
+            <h3 class="fiyatText">45.99 <span>TL</span></h3>
+            <input type="submit" name="satınAl" value="Satın Al">
+        </div>
+        <div class="imgDiv">
+            <img class="efso" src="burger.jpg" alt="">
+            <h3>Kasap Burger</h3>
+            <p>Bol Malzemeli Efsane Burger</p>
+            <h3 class="fiyatText">45.99 <span>TL</span></h3>
+            <input type="submit" name="satınAl" value="Satın Al">
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="footerList">
+            <li><a href="">Anasayfa</a></li>
+            <li><a href="">Hakkımızda</a></li>
+            <li><a href="">İletişim</a></li>
+        </ul>
+        <img src="burgerlogo.png" alt="" height="80px">
+        <ul class="footerList">
+            <li><a href="">Burgerler</a></li>
+            <li><a href="">Restorantlar</a></li>
+            <li><a href="">Kariyer</a></li>
+        </ul>
+        <!-- <div class="footerMenu">
+            <div>
+                <a class="headerLink" href="">Anasayfa</a>
+            </div>
+            <div>
+                <a class="headerLink" href="">Hakkımızda</a>
+            </div>
+            <div>
+                <a class="headerLink" href="">İletişim</a>
+            </div>
+        </div>
+        <div>
+            <img src="burgerlogo.png" alt="" height="100px" style="border-radius:5px">
+        </div>
+        <div class="footerMenu">
+            <div>
+                <a class="headerLink" href="">Burgerler</a>
+            </div>
+            <div>
+                <a class="headerLink" href="">Restorantlar</a>
+            </div>
+            <div>
+                <a class="headerLink" href="">Kariyer</a>
+            </div>
+        </div> -->
+    </div>
+
+</body>
+
+</html>
